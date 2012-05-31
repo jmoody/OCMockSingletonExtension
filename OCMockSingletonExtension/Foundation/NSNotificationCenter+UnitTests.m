@@ -17,10 +17,12 @@ static NSNotificationCenter *mockNotificationCenter = nil;
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
 + (id)defaultCenter {
+  @autoreleasepool {
     if (mockNotificationCenter != nil) {
-        return mockNotificationCenter;
+      return mockNotificationCenter;
     }
     return invokeSupersequentNoParameters();
+  }
 }
 #pragma clang diagnostic pop
 
