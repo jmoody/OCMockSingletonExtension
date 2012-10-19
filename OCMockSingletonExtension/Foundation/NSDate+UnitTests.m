@@ -8,7 +8,7 @@
 
 #import "NSDate+UnitTests.h"
 #import "NSObject+SupersequentImplementation.h"
-#import "OCMock.h"
+#import <OCMock/OCMock.h>
 
 static NSDate *mockDate = nil;
 

@@ -8,7 +8,7 @@
 
 #import "NSNotificationCenter+UnitTests.h"
 #import "NSObject+SupersequentImplementation.h"
-#import "OCMock.h"
+#import <OCMock/OCMock.h>
 
 static NSNotificationCenter *mockNotificationCenter = nil;
 
